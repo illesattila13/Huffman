@@ -8,3 +8,9 @@ Arguments: <br>
               2: decompress <br>
   input : input file name  <br>
   output: output file name 
+  
+<br>
+
+example: <br>
+
+Huff.exe 1 in.txt out.bin
