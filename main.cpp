@@ -5,13 +5,30 @@
 
 using namespace std;
 
-int main(int argc, char* argv[])
+int main(int argc, char* argv[] )
 {
-	HuffmanCompresser huffcomp("bible.txt", "bible.bin");
-	huffcomp.makeHuffCodes();
-	huffcomp.compress();
-		
-	HuffmanDecompresser decomp("bible.bin", "bible2.txt");
-	decomp.readHuffCodes();
-	decomp.decompress();
+	//argv[0] == 1 : compress
+	try {
+		if (stoi(argv[1]) == 1)
+		{
+			HuffmanCompresser huffcomp(argv[2], argv[3]);
+			huffcomp.makeHuffCodes();
+			huffcomp.compress();
+		}
+		else if (stoi(argv[1]) == 2) ////argv[0] == 1 : decompress
+		{
+			HuffmanDecompresser decomp(argv[2], argv[3]);
+			decomp.readHuffCodes();
+			decomp.decompress();
+		}
+		else
+		{
+			cout << "Wrong 1. argument. ABORT";
+
+		}
+	}
+	catch (exception& e)
+	{
+		cout << e.what() << endl;
+	}
 }
