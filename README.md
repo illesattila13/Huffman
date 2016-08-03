@@ -2,9 +2,9 @@
 Huffman coder and decoder program
 
 Arguments:
->> Huff.exe direction input output
+  Huff.exe direction input output \n
 
-  direction:  1: compress
-              2: decompress
-  input : input file name 
+  direction:  1: compress \n
+              2: decompress \n
+  input : input file name  \n
   output: output file name 
