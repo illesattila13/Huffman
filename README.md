@@ -1,5 +1,6 @@
 # Huffman
-Huffman coder and decoder program
+Huffman coder and decoder program <br>
+<a href="https://goo.gl/HHYiRR">Huffman coding - Wikipedia</a>
 
 Arguments: <br>
   Huff.exe direction input output <br>
